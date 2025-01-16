@@ -51,6 +51,7 @@ const Login: React.FC<LoginProps> = ({ setShowLogin }) => {
             type="password"
             placeholder="Enter your password"
             status={loginError ? "error" : undefined}
+            
           />
         </div>
         <ButtonComponent
