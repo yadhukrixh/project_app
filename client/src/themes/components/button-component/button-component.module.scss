@@ -1,0 +1,37 @@
+.button{
+    border: none !important;
+    background-color: var(--main-button-color) !important;
+    height: 48px;
+    max-width: 400px;
+    border-radius: 100px;
+    color: var(--main-font-white) !important;
+    transition: all 0.4s ease;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--button-active-background) !important;
+    color: var(--main-font-white) !important;
+    box-shadow: 0px 2px 15px 0px #FF950026;
+
+    span{
+        color: var(--main-font-white) !important;
+    }
+
+}
+
+.button:active{
+    background-color: var(--button-active-background) !important;
+    color: var(--main-font-white) !important;
+    box-shadow: 0px 2px 15px 0px #FF950026;
+
+    span{
+        color: var(--main-font-white) !important;
+    }
+}
+
+.button:disabled{
+    opacity: 0.5;
+    cursor: no-drop;
+}

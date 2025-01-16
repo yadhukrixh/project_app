@@ -1,0 +1,67 @@
+.loginWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 44px;
+    color: var(--main-font-dark);
+    margin-bottom: 200px;
+    outline: none !important;
+
+    h2{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        align-items: center;
+    }
+}
+
+.loginForm{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media(max-width:425px){
+        width: 300px;
+    }
+
+    .forgotPassword{
+        font-size: 14px;
+        transition: all 0.4s ease;
+    }
+    .forgotPassword:hover{
+        font-size: 15px;
+        color: var(--button-active-background);
+    }
+
+    .forgotPassword:active{
+        color: var(--button-active-background);
+    }
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    h3{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.forgotPassword{
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.errorMessage{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--danger-color);
+}

@@ -1,0 +1,50 @@
+:root {
+  --main-background-color:#F8F5F0;
+  --main-button-color:#FF9500;
+  --danger-background-color:#FFEBEA;
+  --sucess-backgroud-color:#E7F7EB;
+  --primary-active-background:#FFF4E6;
+  --input-background-color:#FFFFFF;
+  --input-border-color:#DFDAD4;
+  --button-active-background:#E88800;
+
+
+  --danger-color:#FF3B30;
+  --success-color:#13AF35;
+  --main-font-dark:#291C0A;
+  --main-font-white: #FFFFFF;
+  --secondary-font-dark:#676562;
+
+
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-japanese);
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var( --main-background-color);
+  font-family: var(--font-japanese);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
