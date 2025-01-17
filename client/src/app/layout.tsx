@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../themes/styles/globals.scss";
 
-
 export const metadata: Metadata = {
   title: "Project",
 };

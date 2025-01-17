@@ -24,10 +24,23 @@
         box-shadow: none !important;
     }
 
+    &:active{
+        border-color: var(--main-button-color);
+    }
+
+    &:focus-within{
+        border-color: var(--main-button-color);
+        box-shadow: none;
+    }
+
     &:disabled {
         background-color: #f5f5f5;
         /* Disabled background */
         cursor: not-allowed;
+    }
+
+    :global(.ant-input-suffix){
+        cursor: pointer;
     }
 
     &[type=password]:not(:placeholder-shown) {
@@ -38,6 +51,11 @@
 
     &::placeholder {
         font-size: 15px;
-        font-weight: 300;
+        font-weight: 400;
     }
 }
+
+
+.customInput .ant-input-password-icon {
+    cursor: pointer; /* Make icon pointer when hovering */
+  }

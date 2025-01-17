@@ -1,0 +1,83 @@
+.customTable .ant-table-container table {
+    border-collapse: collapse;
+}
+
+.customTable .ant-table-cell {
+    border: none !important;
+    padding: 10px 15px;
+}
+
+.customTable .ant-table-thead>tr>th {
+    background-color: transparent !important;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 0.5px solid var(--input-border-color) !important;
+    border-right: none !important;
+}
+
+.customTable .ant-table-tbody>tr {
+    border-bottom: 0.5px solid var(--input-border-color) !important;
+}
+
+.customTable .ant-table-tbody>tr:last-child {
+    border-bottom: none;
+}
+
+.customTable .ant-table-tbody>tr:hover {
+    background-color: #fafafa;
+}
+
+.customTable .ant-tooltip-inner {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.customTable {
+    border: none;
+}
+
+.customTable .ant-table {
+    border: none !important;
+}
+
+
+.customTable {
+    :global(.ant-table-thead>tr>th) {
+        border-bottom: 1px solid var(--input-border-color);
+        background-color: var(--input-background-color) !important;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--secondary-font-dark);
+
+        &::before {
+            display: none !important;
+        }
+    }
+
+
+    :global(.ant-table-tbody>tr>td) {
+        color: var(--main-font-dark);
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+
+        white-space: nowrap;
+        /* Prevent text from wrapping */
+        overflow: hidden;
+        /* Hide overflowing text */
+        text-overflow: ellipsis;
+        /* Add ellipsis (...) for overflowing text */
+        max-width: 150px;
+    }
+
+    :global(.ant-pagination>.ant-pagination-item-active){
+        background-color: var(--button-active-background) !important;
+        border: none;
+        
+        a{
+            color: var(--input-background-color) !important;
+        }
+    }
+
+
+}

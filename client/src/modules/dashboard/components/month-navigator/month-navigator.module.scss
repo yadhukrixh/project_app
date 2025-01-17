@@ -1,0 +1,42 @@
+/* These styles should be in a CSS module file named month-navigator.module.css */
+
+
+
+.monthNavigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.navigationButtonLeft,
+.navigationButtonRight {
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.month{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--main-font-dark)
+}
+
+.navigationButtonLeft {
+    transform: rotate(180deg);
+}

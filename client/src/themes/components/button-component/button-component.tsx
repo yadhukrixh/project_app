@@ -6,16 +6,18 @@ interface CustomButtonProps {
   label: string;
   onClick: () => void;
   disabled?: boolean;
+  loading?: boolean;
 }
 
 const ButtonComponent: React.FC<CustomButtonProps> = ({
   label,
   onClick,
   disabled = false,
+  loading
 }) => {
   return (
-    <Button className={styles.button} onClick={onClick} disabled={disabled}>
-      {label}
+    <Button className={styles.button} onClick={onClick} disabled={disabled} loading={loading}>
+      {!loading && label}
     </Button>
   );
 };

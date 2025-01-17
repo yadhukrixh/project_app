@@ -1,0 +1,59 @@
+.dashboardWrapper {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, max(300px, 1fr));
+    /* Responsive columns */
+    gap: 10px;
+    align-items: start;
+
+    @media(max-width: 1000px) {
+        padding: 0px;
+        justify-content: center;
+        gap:0px;
+        margin-top: 20px;
+    }
+
+    @media(min-width: 1134px) and (max-width: 1418px) {
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fit, (300px, 1fr));
+        direction: ltr;
+        order: 2;
+    }
+    
+
+    @media(min-width: 1500px){
+        grid-template-columns: repeat(auto-fit, (400px, 1fr));
+        gap: 20px;
+    } 
+}
+
+.dashboardWrapper > * {
+    @media(min-width: 1134px) and (max-width: 1410px) {
+        direction: ltr; /* Reset direction for children to maintain normal text direction */
+        order: 2;
+    }
+}
+
+.cardsTop {
+    grid-area: cardsTop;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    @media(min-width:820px) and (max-width: 1000px) {
+        gap:5px;
+    }
+
+    @media(min-width: 1134px) and (max-width: 1418px) {
+        direction: rtl; /* Reset direction for children to maintain normal text direction */
+        order: 1;
+        justify-content: flex-end;
+    }
+
+    @media(min-width: 1500px){
+        justify-content: flex-start;
+        gap: 20px;
+    } 
+    
+}

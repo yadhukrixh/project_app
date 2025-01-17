@@ -1,0 +1,20 @@
+.usersWrapper{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    h2{
+        padding-left: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--main-font-dark);
+    }
+}
